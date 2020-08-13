@@ -1,0 +1,197 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/* navegation bar grid */
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 150px 33px 50px  ;
+    grid-template-rows: 50px;
+    grid-template-areas: ". Google-search Menu Sign-in-btn" ;
+    margin: 0 30px;
+}
+/* texts modification */
+a, p {
+    text-decoration: none;
+    color:  rgb(41, 41, 41);
+    font-size: 13px;
+    font-family: sans-serif;  
+}
+a:hover {
+    text-decoration: underline;
+}
+/* navegation bar grid item modifications */
+
+#Google-search {
+    grid-area: Google-search;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+}
+#Menu {
+    grid-area: Menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 40px;
+}
+#Sign-in-btn {
+    grid-area: Sign-in-btn;
+    justify-self: center;
+    align-self: center;
+    background-color: #588fee;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4d88ec;
+    border-radius: 2px;
+}
+
+#Sign-in-btn:hover {
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.582);
+}
+/* main view grid*/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 650px 1fr ;
+    grid-template-rows: 250px 40px ;
+    grid-template-areas: 
+    " . logo ."
+    ". search-bar .";
+}
+/* main view items modifications */
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: flex-end;
+    padding-bottom: 52px;
+}
+#images {
+    position: absolute;
+    right: 552px;
+    top: 233px;
+    text-decoration: none;
+    color:  #4d88ec;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+/* search bar modifications */
+#search-bar {
+    grid-area: search-bar;
+    justify-self: center;
+    width: 80%;
+    align-self: center;
+    padding-bottom: 60px;
+}
+#search {
+    grid-area: search;
+    height: 42px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(65, 65, 65, 0.233);
+    border-radius: 30px;
+    outline: none;
+    text-indent: 40px;
+}
+
+#lupa-btn {
+    position: absolute;
+    right: 430px;
+    top: 288px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+#search {
+    background-position: 3%, 80%, 88%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-image: url(lupa.png), url(camera.png), url(microfono.png);
+    background-size: 15px, 20px, 20px;
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.582);
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.582);
+}
+
+
+/* footer grid */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    bottom: 0;
+    position: absolute; 
+    background-color: rgba(211, 211, 211, 0.37);
+    border: 1px solid rgba(211, 211, 211, 0.37);
+}
+
+#left-footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 150px;
+    grid-template-rows: 40px;
+    grid-template-areas: " Advertising Business About How-Search-works";
+}
+
+#right-footer {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 40px;
+    grid-template-areas: " Privacy Terms Settings";
+}
+/* footer texts modification */
+b {
+    text-decoration: none;
+    color:  rgb(110, 110, 110);
+    font-size: 14px;
+    font-family: sans-serif; 
+    font-weight: normal;
+    cursor: pointer;
+}
+
+b:hover {
+    text-decoration: underline;
+}
+/* footer grid items modifications */
+#Advertising {
+    grid-area: Advertising;
+    justify-self: center;
+    align-self: center;
+} 
+#Business {
+    grid-area: Business;
+    justify-self: center;
+    align-self: center;
+}
+#About {
+    grid-area: About ;
+    justify-self: center;
+    align-self: center;
+}
+#How-Search-works {
+    grid-area: How-Search-works;
+    justify-self: center;
+    align-self: center;
+}
+#Privacy {
+    grid-area: Privacy;
+    justify-self: center;
+    align-self: center;
+}
+#Terms {
+    grid-area: Terms ;
+    justify-self: center;
+    align-self: center;
+}
+#Settings {
+    grid-area: Settings;
+    justify-self: center;
+    align-self: center;
+}
+           

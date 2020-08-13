@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/* navegation bar grid */
+#navbar {
+    display: grid;
+    position: relative;
+    grid-template-columns: 150px 1fr 150px 33px 50px;
+    grid-template-rows: 60px ;
+    grid-template-areas: "logo . Google-search Menu Sign-in-btn" ;
+    background-color: rgba(128, 128, 128, 0.11);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+/* texts modification */
+a, p {
+    text-decoration: none;
+    color:  rgb(41, 41, 41);
+    font-size: 13px;
+    font-family: sans-serif;  
+}
+a:hover {
+    text-decoration: underline;
+}
+/* navegation bar grid item modifications */
+
+#logo {
+    grid-area: logo;
+    justify-self: left;
+    align-self: center;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+#Google-search {
+    grid-area: Google-search;
+    justify-self: center;
+    align-self: center;
+    margin-right: 40px;
+}
+#Menu {
+    grid-area: Menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 80px;
+}
+#Sign-in-btn {
+    grid-area: Sign-in-btn;
+    justify-self: center;
+    align-self: center;
+    background-color: #588fee;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4d88ec;
+    border-radius: 2px;
+    margin-right: 40px;
+    outline: none;
+}
+
+#Sign-in-btn:hover {
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.582);
+}
+/* top title view grid*/
+#top-title {
+    display: grid;
+    grid-template-columns: 220px 570px 1fr ;
+    grid-template-rows: 70px;
+    grid-template-areas: " advance . .";
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+}
+/* advanced search modifications*/
+#advanced {
+    grid-area: advance;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    color:  rgb(214, 16, 16);
+    font-size: 20px;
+    font-family: sans-serif; 
+    margin-left: 12px;
+}  
+
+/* advanced title grid*/
+#adv-title {
+    display: grid;
+    grid-template-columns: 220px 580px 1fr;
+    grid-template-rows: 70px 45px 45px 45px 45px 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    grid-template-areas: 
+    "find . todo"
+    "alli in-all type " 
+    "this in-this put"
+    "any in-any type-or"
+    "nonei in-none put-a"
+    ". advanced-btn .";
+}
+
+#find {
+    grid-area: find;
+    justify-self: left;
+    align-self: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 35px
+}
+
+#todo {
+    grid-area: todo;
+    justify-self: left;
+    align-self: center;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: bold;
+    color: grey;
+    margin-left: -5px;
+    
+}
+/* advences search items*/
+#alli {
+    grid-area: alli;
+    justify-self: left;
+    align-self: center;
+    padding: 35px;
+}
+#this {
+    grid-area: this;
+    justify-self: left;
+    align-self: center;
+    padding: 35px;
+}
+#any {
+    grid-area: any;
+    justify-self: left;
+    align-self: center;
+    padding: 35px;
+}
+#nonei {
+    grid-area: nonei;
+    justify-self: left;
+    align-self: center;
+    padding: 35px;
+}
+/* texts bar modicications*/
+.adv-input {
+    height: 24px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    margin-right: 10px;
+    align-self: center;
+    outline: none;
+}
+.adv-input:focus {
+    border: 1px solid #4d88ec;
+    box-shadow: 0px 1px 2px 0px rgba(128, 128, 128, 0.562) inset;
+}
+
+#in-all {
+    grid-area: in-all;
+}
+#in-this {
+    grid-area: in-this;
+}
+#in-any {
+    grid-area: in-any;
+}
+#in-none {
+    grid-area: in-none;
+}
+
+.todo-list {
+    justify-self: left;
+    align-self: center;
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+    margin-left: 10px;
+
+}
+#type {
+    grid-area: type;
+}
+#put {
+    grid-area: put;
+}
+#type-or {
+    grid-area: type-or;
+}
+#put-a {
+    grid-area: put-a;
+}
+
+#advanced-btn {
+    grid-area: advanced-btn;
+    justify-self: right;
+    align-self: center;
+    background-color: #588fee;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #4d88ec;
+    border-radius: 2px;
+    margin-right: 12px;
+    outline: none;
+}
+
+#advanced-btn:hover {
+    border: 1px solid #005dfd;
+    background-color: #4481eb;
+}
+
+/* footer grid */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    bottom: 0;
+    position: absolute; 
+    background-color: rgba(211, 211, 211, 0.37);
+    border: 1px solid rgba(211, 211, 211, 0.37);
+}
+
+#left-footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 150px;
+    grid-template-rows: 40px;
+    grid-template-areas: " Advertising Business About How-Search-works";
+}
+
+#right-footer {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 40px;
+    grid-template-areas: " Privacy Terms Settings";
+}
+/* footer texts modification */
+b {
+    text-decoration: none;
+    color:  rgb(110, 110, 110);
+    font-size: 14px;
+    font-family: sans-serif; 
+    font-weight: normal;
+    cursor: pointer;
+}
+
+b:hover {
+    text-decoration: underline;
+}
+/* footer grid items modifications */
+#Advertising {
+    grid-area: Advertising;
+    justify-self: center;
+    align-self: center;
+} 
+#Business {
+    grid-area: Business;
+    justify-self: center;
+    align-self: center;
+}
+#About {
+    grid-area: About ;
+    justify-self: center;
+    align-self: center;
+}
+#How-Search-works {
+    grid-area: How-Search-works;
+    justify-self: center;
+    align-self: center;
+}
+#Privacy {
+    grid-area: Privacy;
+    justify-self: center;
+    align-self: center;
+}
+#Terms {
+    grid-area: Terms ;
+    justify-self: center;
+    align-self: center;
+}
+#Settings {
+    grid-area: Settings;
+    justify-self: center;
+    align-self: center;
+}
+           
